@@ -1,3 +1,12 @@
+"""
+Script para realizar la clasificación de las ofertas de trabajo
+utilizando los algoritmos:
+1) SVM
+2) Naive-Bayes
+3) Regresión logística
+4) Random Forest
+"""
+
 import pandas as pd
 from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords

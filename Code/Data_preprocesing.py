@@ -1,3 +1,8 @@
+"""
+Script que obtiene los conjuntos de datos de entrenamiento
+y prueba cuando se utiliza validación cruzada estratificada.
+"""
+
 import pandas as pd
 from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords

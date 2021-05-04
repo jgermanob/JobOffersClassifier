@@ -1,3 +1,8 @@
+"""
+División del conjunto de datos para entrenamiento y prueba
+se toman 80% de las instancias de cada clase para entrenamiento,
+el 20% restante de cada clase conforma el conjunto de prueba.
+"""
 import pandas as pd
 from sklearn.model_selection import train_test_split
 

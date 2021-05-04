@@ -1,3 +1,8 @@
+"""
+Script para obtener conjuntos de datos para entrenamiento
+y prueba cuando se obtiene una partición 80%-20%.
+"""
+
 import pandas as pd
 from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords

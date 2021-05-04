@@ -1,3 +1,7 @@
+"""
+Código que implementa una clase Backtranslator
+utilizando la biblioteca BackTranslation
+"""
 from BackTranslation import BackTranslation
 import pandas as pd
 from os import system

@@ -1,3 +1,11 @@
+"""
+Script para limpieza inicial del conjunto de datos, se realiza:
+1) Normalización de textos
+2) Elimina aviso de privacidad
+3) Guarda el texto limpio en un archivo csv
+"""
+
+
 import pandas as pd
 from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords
