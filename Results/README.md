@@ -16,6 +16,7 @@
 | LSTM | 0.652 | 0.578 | 0.538 | 0.55 |
 | CNN | 0.696 | 0.674 | 0.56 | 0.594 |
 
+
 ## División de conjunto de datos. 80%-entrenamiento, 20%-prueba.
 
 #### Resultados con backtranslation
@@ -37,3 +38,4 @@
 | Naive-Bayes | 0.61 | 0.60 | 0.32 | 0.37 |
 | Logistic Regression |0.69|0.62|0.55|0.58|
 | Random Forest |0.70|0.74|0.51|0.58|
+

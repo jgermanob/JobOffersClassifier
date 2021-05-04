@@ -27,7 +27,7 @@ def clean_text(text):
     clean_text = clean_text.strip()
     return clean_text.strip()
 
-df = pd.read_csv('./Data/Augmented_data.csv', encoding='utf8')
+df = pd.read_csv('./Data/Data_For_Backtranslation.csv', encoding='utf8')
 df['texto'] = df['texto'].apply(normalize_text)
 df['texto'] = df['texto'].apply(clean_text)
 
@@ -62,16 +62,16 @@ for train_index, test_index in kf.split(texts,labels):
     for word, i in tokenizer.word_index.items():
         if word in embedding_model:
             embedding_matrix[i] = embedding_model[word]
-    np.savez_compressed('./Data/K-Folds/{}-fold/embedding_matrix.npz'.format(fold),embedding_matrix,)
+    np.savez_compressed('./Data/K-Folds/{}-fold/embedding_matrix_baseline.npz'.format(fold),embedding_matrix,)
 
     # Guardado de los conjuntos de entrenamiento y prueba #
-    np.savez_compressed('./Data/K-Folds/{}-fold/x_train.npz'.format(fold),x_train,)
-    np.savez_compressed('./Data/K-Folds/{}-fold/y_train.npz'.format(fold),y_train,)
-    np.savez_compressed('./Data/K-Folds/{}-fold/x_test.npz'.format(fold),x_test,)
-    np.savez_compressed('./Data/K-Folds/{}-fold/y_test.npz'.format(fold),y_test,)
+    np.savez_compressed('./Data/K-Folds/{}-fold/x_train_baseline.npz'.format(fold),x_train,)
+    np.savez_compressed('./Data/K-Folds/{}-fold/y_train_baseline.npz'.format(fold),y_train,)
+    np.savez_compressed('./Data/K-Folds/{}-fold/x_test_baseline.npz'.format(fold),x_test,)
+    np.savez_compressed('./Data/K-Folds/{}-fold/y_test_baseline.npz'.format(fold),y_test,)
 
     # Guardado de tokenizer#
-    with open('./Data/K-Folds/{}-fold/tokenizer.pickle'.format(fold), 'wb') as handle:
+    with open('./Data/K-Folds/{}-fold/tokenizer_baseline.pickle'.format(fold), 'wb') as handle:
         pickle.dump(tokenizer, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
     fold += 1

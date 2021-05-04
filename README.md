@@ -7,7 +7,7 @@ Proyecto de clasificación multiclase de ofertas de trabajo utilizando aprendiza
 ## Backtranslation
 Para llevar a cabo el proceso de backtranslation se utilizó el traductor de Google y la herramienta de Google sheets como se indica [aquí](https://amitness.com/2020/02/back-translation-in-google-sheets/).
 
-Se utilizaron 10 idiomas intermedios para realizar el proceso, los cuales son:
+Se utilizaron 11 idiomas intermedios para realizar el proceso, los cuales son:
 | Idioma | Código |
 | --- | --- |
 | Inglés | en |
