@@ -1,0 +1,29 @@
+                   precision    recall  f1-score   support
+
+   Administración       0.00      0.00      0.00      1806
+      Call Center       0.00      0.00      0.00      1776
+Comercio Exterior       0.26      0.55      0.36        47
+     Comunicación       0.10      0.33      0.16        86
+     Construcción       0.32      0.69      0.44       130
+           Diseño       0.38      0.66      0.48       137
+        Educación       0.40      0.74      0.52       144
+         Finanzas       0.14      0.68      0.23       275
+      Gastronomía       0.32      0.71      0.44       273
+         Gerencia       0.09      0.30      0.14        57
+       Ingeniería       0.13      0.42      0.20       183
+          Legales       0.26      0.65      0.38       137
+        Logística       0.32      0.67      0.44       465
+    Mercadotecnia       0.24      0.67      0.36       350
+          Minería       0.24      0.50      0.32        10
+          Oficios       0.20      0.60      0.30       819
+       Producción       0.38      0.63      0.47       235
+ Recursos Humanos       0.36      0.79      0.50       486
+            Salud       0.36      0.74      0.48       329
+       Secretaria       0.25      0.75      0.38       257
+          Seguros       0.15      0.62      0.24       121
+       Tecnología       0.00      0.00      0.00      1191
+           Ventas       0.00      0.00      0.00      2745
+
+         accuracy                           0.25     12059
+        macro avg       0.21      0.51      0.30     12059
+     weighted avg       0.10      0.25      0.14     12059

@@ -47,9 +47,6 @@ df['texto'] = df['texto'].apply(clean_text2)
 df.drop_duplicates(subset='texto', keep='first', inplace=True)
 df = df.reset_index(drop=True)
 
-for text in df['texto']:
-    print(text)
-    break
 
 # Creación de nuevo dataframe para utilizar en la etapa de backtranslation#
 new_df = pd.DataFrame()
